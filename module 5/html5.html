@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html5_style.css">
+</head>
+<body>
+    <h2>Video Example</h2>
+    <video src="D:\Mern stack\module 5\14078407_1920_1080_60fps.mp4" controls loop autoplay></video><hr><br>
+    <h2>Audion Example</h2>
+    <audio src="D:\Mern stack\module 5\gorila-315977.mp3" controls loop autoplay></audio><hr><br>
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="170" height="100" style="border:1px solid black;">
+        Sorry, your browser does not support canvas.
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+    </script><hr><br>
+    <h2>Svg Example</h2>
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+    </svg> 
+
+</body>
+</html>
